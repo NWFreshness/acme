@@ -20,7 +20,7 @@ class CreateTestimonialsTable extends AbstractMigration
             ->addColumn('user_id', 'integer')
             //('testimonial column name', 'linked table name', 'linked table row', 'actions to take in an array')
             ->addForeignKey('user_id', 'users', 'id', ['delete' => 'cascade', 'update' => 'cascade'])
-            ->addColumn('created_at', 'datetime', ['null' => true])
+            ->addColumn('created_at', 'datetime', ['default' => 'CURRENT_TIMESTAMP'])
             ->addColumn('updated_at', 'datetime', ['null' => true])
             ->save();
     }
