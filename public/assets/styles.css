@@ -1,3 +1,19 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 136px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 136px;
+  background-color: #f5f5f5;
+}
 .bigger-icon {
     font-size: 36px;
 }
@@ -14,3 +30,4 @@
 .error{
     color: red;
 }
+

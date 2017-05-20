@@ -1,4 +1,4 @@
-<?php namespace Acme\Models;
+<?php namespace Acme\models;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
